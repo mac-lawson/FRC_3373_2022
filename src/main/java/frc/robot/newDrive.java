@@ -1,5 +1,7 @@
 package frc.robot;
 import com.revrobotics.CANSparkMax;
+import com.revrobotics.RelativeEncoder;
+import com.revrobotics.SparkMaxPIDController;
 
 import edu.wpi.first.wpilibj.CAN;
 import edu.wpi.first.wpilibj.XboxController;
@@ -19,7 +21,7 @@ public class newDrive {
      * @author Mac Lawson and Zachary Popik
      */
     public static void tank(CANSparkMax driveMotor1, CANSparkMax driveMotor2, XboxController controller) {
-        //performs configuration of motors for driving 
+        //performs configuration of motors for driving
         driveMotor1.restoreFactoryDefaults();
         driveMotor2.restoreFactoryDefaults();
         driveMotor1.setOpenLoopRampRate(1.0);
@@ -43,8 +45,19 @@ public class newDrive {
             //going left
         }
 
+    }
+    // TODO
+    public static void SimpleSwerveDrive(CANSparkMax backLeftDriveMotor) {
+       int deviceID = 1;
+        CANSparkMax m_motor;
+        SparkMaxPIDController m_pidController;
+        RelativeEncoder m_encoder;
+        double kP, kI, kD, kIz, kFF, kMaxOutput, kMinOutput;
+
         
     }
+
+
 
 
 }

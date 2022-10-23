@@ -95,11 +95,13 @@
     }
   ],
   "robotJoysticks": [
-    {
-      "guid": "Keyboard1"
-    },
+    {},
     {
       "guid": "Keyboard2"
+    },
+    {},
+    {
+      "guid": "Keyboard1"
     }
   ]
 }
